@@ -5,21 +5,21 @@
 class GopticonConnect < Formula
   desc "CLI tool to scan and process PS5 barcodes"
   homepage "https://gitlab.forge.hefr.ch/louis.pasquier/ps5-barcode-scanner"
-  version "0.1.3"
+  version "0.2.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://gitlab.forge.hefr.ch/louis.pasquier/ps5-barcode-scanner/-/releases/v0.1.3/downloads/ps5-barcode-scanner_Darwin_x86_64.tar.gz"
-    sha256 "1a9f9838ff23c8803218ab05215aa03ed47376dafb9c80a6b4ee269656b670f5"
+    url "https://gitlab.forge.hefr.ch/louis.pasquier/ps5-barcode-scanner/-/releases/v0.2.0/downloads/ps5-barcode-scanner_Darwin_x86_64.tar.gz"
+    sha256 "52d908c19b01806e7f3468cc33b4d65ff63b17ddb6ee55313496127bcb29b531"
 
     def install
       bin.install "gopticon-connect"
     end
   end
   if Hardware::CPU.arm?
-    url "https://gitlab.forge.hefr.ch/louis.pasquier/ps5-barcode-scanner/-/releases/v0.1.3/downloads/ps5-barcode-scanner_Darwin_arm64.tar.gz"
-    sha256 "af228dcb67fb7933aa4e7ad1d5b252e0888c24d1a86817aac978763fe6a47e71"
+    url "https://gitlab.forge.hefr.ch/louis.pasquier/ps5-barcode-scanner/-/releases/v0.2.0/downloads/ps5-barcode-scanner_Darwin_arm64.tar.gz"
+    sha256 "47d0d6ae79d4ae86598f1e693f0446ae8fd6fd502c29bd2dd6bc24870c489ad8"
 
     def install
       bin.install "gopticon-connect"
